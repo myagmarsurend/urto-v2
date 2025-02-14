@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/landing/Header";
-import Footer from "@/components/landing/Footer";
+import FooterSection from "@/components/landing/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const ITCAvantGardeStdMd = localFont({
@@ -59,7 +59,7 @@ export default async function RootLayout({
             <div className="mx-auto h-screen w-full">
               <Header locale={locale} />
               {children}
-              <Footer />
+              <FooterSection />
             </div>
           </NextIntlClientProvider>
         </ThemeProvider>

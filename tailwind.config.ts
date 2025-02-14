@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        urto: "hsl(var(--urto))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -73,15 +74,11 @@ export default {
           DEFAULT: "20px",
           lg: "80px",
         },
-        screens: {
-          sm: "375px",
-          md: "768px",
-          lg: "1200px",
-        },
       },
       screens: {
         sm: "375px",
-        md: "768px",
+        // md: "768px",
+        md: "700px",
         lg: "1200px",
       },
     },
